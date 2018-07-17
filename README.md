@@ -6,12 +6,14 @@ https://trafico.io/aduanet/webservices/doda.php?wsdl
 
 El cual ofrece el siguiente metodo:
 
-- **firmar** (**string** documento, **string** cadenaOriginal, **string** key, **string** cer, **string** password) donde:
+## firmar
 
-* **documento** es el xml a firmar
-* **cadenaOriginal** se define solo en el caso de firmar un doda de eliminacion
-* **key** el contenido del archivo key
-* **cer** el contenido del archivo cer
-* **password** la contraseña de la llave privada
+Firma y sella un xml de doda, recibe los siguientes datos:
 
-Todos estos parametros deben enviarse en base 64
+Campo|Tipo|Descripción
+--- | --- | ---
+**documento** | string en base 64 | El xml a firmar
+**cadenaOriginal** | string en base 64 | Se define solo en el caso de firmar un doda de eliminacion
+**key** | string en base 64 | El contenido del archivo key
+**cer** | string en base 64 | El contenido del archivo cer
+**password** | string en base 64 | La contraseña de la llave privada
